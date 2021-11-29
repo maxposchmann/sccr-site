@@ -1,3 +1,3 @@
 [submodule "SelfConsistentCFBRanker"]
 	path = SelfConsistentCFBRanker
-	url = git@github.com:maxposchmann/SelfConsistentCFBRanker.git
+	url = https://github.com/maxposchmann/sccr-site.git
