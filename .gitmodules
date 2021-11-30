@@ -2,3 +2,4 @@
 	path = SelfConsistentCFBRanker
 	url = git@github.com:maxposchmann/SelfConsistentCFBRanker.git
 	branch = main
+	update = rebase
