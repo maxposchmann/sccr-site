@@ -1,4 +1,4 @@
 [submodule "SelfConsistentCFBRanker"]
 	path = SelfConsistentCFBRanker
-	url = https://github.com/maxposchmann/SelfConsistentCFBRanker.git
+	url = git@github.com:maxposchmann/SelfConsistentCFBRanker.git
 	branch = main
