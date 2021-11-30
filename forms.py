@@ -5,7 +5,7 @@ from datetime import datetime
 
 import pandas as pd
 db = 'SelfConsistentCFBRanker/ncaafb.p'
-d= pd.read_pickle(db)
+d = pd.read_pickle(db)
 
 teams = d['data']['teams']
 

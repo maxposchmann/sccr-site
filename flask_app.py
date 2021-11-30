@@ -15,7 +15,7 @@ import pandas as pd
 from SelfConsistentCFBRanker.functions import general as gen
 
 db = 'SelfConsistentCFBRanker/ncaafb.p'
-d= pd.read_pickle(db)
+d = pd.read_pickle(db)
 
 @server_bp.route('/',methods=['GET', 'POST'])
 def index():
