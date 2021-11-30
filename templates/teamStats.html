@@ -13,6 +13,9 @@
         <div>
             <h3>{{data.team}}</h3>
             <p>{{data.wording}}</p>
+            {{ stats |safe }}
+            {{ results |safe }}
+            {{ remaining |safe }}
         </div>
     </div>
 </div>
