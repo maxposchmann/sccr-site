@@ -43,4 +43,8 @@ def team_stats():
 
     return render_template('teamStats.html', data=data, form=form, stats=stats, results=results, remaining=remaining)
 
+@server_bp.route('/explanation',methods=['GET', 'POST'])
+def explanation():
+    return render_template('explanation.html')
+
 server.register_blueprint(server_bp)
