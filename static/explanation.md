@@ -35,6 +35,7 @@ California (4 - 6)
 |-------|-|---------|-|---------|-|---------|-|---------|
 | Value | |  -4.201 | |  -0.420 | |   8.933 | |   2.047 |
 | Rank  | |     100 | |     102 | |     125 | |       9 |
+&numsp;
 
 | Played                    | &numsp; &numsp; | Outcome    | &numsp; &numsp; |  Change  |
 |---------------------------|-|------------|-|----------|
@@ -48,11 +49,13 @@ California (4 - 6)
 |  96 Colorado              | | Win        | | +  0.754 |
 | 127 Arizona               | | Loss       | | -  2.210 |
 | 131 Non-FBS               | | Win        | | +  0.341 |
+&numsp;
 
 | Remaining                 | &numsp; &numsp; |  If Win  | &numsp; &numsp; |  If Loss |
 |---------------------------|-|----------|-|----------|
 |  86 USC                   | | +  0.853 | | -  1.173 |
 |  45 UCLA                  | | +  1.194 | | -  0.837 |
+&numsp;
 
 # Examples:
 ## 2019
@@ -85,6 +88,7 @@ Let's take a look at the top 25 prior to bowl games for the 2019 season. I'll us
 |    23| |Navy                  | |7.487| |23|
 |    24| |Iowa                  | |7.092| |16|
 |    25| |Florida Atlantic      | |6.777| |NR|
+&numsp;
 
 This ranking results in 3 of the 4 playoff selection, and Oklahoma is only edged out by Memphis by a razor-thin margin. Evidently this ranking system is not the hot-take generator I had feared. In total 4 of the top-25 teams differ from the CFP committee's list. Dropped are 8-4 USC (22), 9-4 Virginia (24), and 8-4 Oklahoma State (25). Added are 10-3 SMU, 11-2 Air Force, and 11-3 FAU. Overall this ranking prefers G5 teams with more wins over P5 teams with fewer, relative to the CFP. I agree.
 
@@ -105,6 +109,7 @@ But what about 2017? Starting with the same point (December 3rd), who should hav
 |     8| |Alabama               | |11.303| |4|
 |     9| |Auburn                | |10.581| |7|
 |    10| |Notre Dame            | |10.301| |14|
+&numsp;
 
 That's only a little different from the CFP as well.. According to SCCR, UCF should been given a chance to play for the title over Alabama.
 
@@ -122,6 +127,7 @@ Interestingly, the Colley Matrix still put UCF at 1 after bowl games, even thoug
 |     8| |Penn State            | |11.798|
 |     9| |Notre Dame            | |11.595|
 |    10| |Auburn                | |10.879|
+&numsp;
 
 Sorry UCF, but SCCR agrees that Alabama were the 2017 national champions, with their playoff victories vaulting them to the top.
 
@@ -174,6 +180,7 @@ As discussed in point 1, SCCR is effectively a cumulative resume rating system, 
 |    23| |Marshall              | |4.633| | Army |
 |    24| |Appalachian State     | |4.610| | Oklahoma State |
 |    25| |Indiana               | |4.608| | Northwestern |
+&numsp;
 
 Notice that 6-0 Ohio State has dropped from playoff position at \#3 in the CFP rankings to \#13 here (\#5 in Colley), due to not having earned enough wins in their shortened season. They would have been replaced by the Chanticleers! Now tell me there's a better rating system.
 
