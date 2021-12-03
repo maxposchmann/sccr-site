@@ -12,15 +12,25 @@ server_bp = Blueprint('main', __name__)
 
 from forms import selectTeam
 import pandas as pd
-from SelfConsistentCFBRanker.functions import general as gen
 
 db = 'SelfConsistentCFBRanker/ncaafb.p'
 d = pd.read_pickle(db)
 
+def formatDf(data):
+    a = data.copy()
+    df = pd.DataFrame(a) \
+        .to_html(classes='table table-striped sortable', index=False, border=0, justify='left', escape=False)
+    return df
+
+def teamLink(teamName):
+    x = ''.join([i for i in teamName if not i.isdigit()]).strip()
+    return f'<a href="/team_stats?team={x}">{teamName}</a>'
+
 @server_bp.route('/',methods=['GET', 'POST'])
 def index():
     table = d['analysis']['teamRankings'].copy()
-    table = gen.formatDf(table)
+    table['Team'] = table['Team'].apply(lambda x: teamLink(x))
+    table =formatDf(table)
 
     week = d['analysis']['week']
     return render_template('index.html', title='Index', table=table, week=week)
@@ -40,11 +50,19 @@ def team_stats():
         try:
             data = d['analysis']['byTeam'][team]
             stats = d['analysis']['byTeam'][team]['stats'].copy()
-            stats = gen.formatDf(stats)
+            stats = formatDf(stats)
             results = d['analysis']['byTeam'][team]['results'].copy()
-            results = gen.formatDf(results)
+            try:
+                results['Played'] = results['Played'].apply(lambda x: teamLink(x))
+            except:
+                pass
+            results = formatDf(results)
             remaining = d['analysis']['byTeam'][team]['remaining'].copy()
-            remaining = gen.formatDf(remaining)
+            try:
+                remaining['Remaining'] = remaining['Remaining'].apply(lambda x: teamLink(x))
+            except:
+                pass
+            remaining = formatDf(remaining)
 
             if request.method == "POST":
                 team = form.team.data
