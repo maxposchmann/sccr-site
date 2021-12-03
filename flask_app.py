@@ -67,7 +67,11 @@ def team_stats():
             if request.method == "POST":
                 team = form.team.data
                 data = d['analysis']['byTeam'][team]
-            return render_template('teamStats.html', data=data, form=form, stats=stats, results=results, remaining=remaining)
+
+            if team == 'Non-FBS':
+                return render_template('non-FBS.html', data=data, form=form, results=results)
+            else:
+                return render_template('teamStats.html', data=data, form=form, stats=stats, results=results, remaining=remaining)
         except KeyError:
             return redirect(f'/team_stats')
     else:

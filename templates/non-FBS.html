@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="row" style="margin-bottom:15px">
+    <div class="col-md-4">
+        <form action="" method="POST" novalidate>
+            {{form.team(class="form-control", **{"onchange": "this.form.submit()"})|safe}}
+        </form>
+    </div>
+</div>
+<div class = "row">
+    <div class="col-lg-8 md-12">
+        <div>
+            <h3>{{data.team}}</h3>
+            <p>{{data.wording}}</p>
+            <p>All non-FBS opponents are approximated by this placeholder team, which is assumed to be slightly worse than the worst FBS team.</p>
+            {{ results |safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
