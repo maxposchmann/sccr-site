@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="row">
+    <div class="col-lg-6 md-12">
+        <h2>Select a team</h2>
+        <form action="" method="POST" novalidate>
+            {{form.team(class="form-control", **{"onchange": "this.form.submit()"})|safe}}
+        </form>
+    </div>
+</div>
+{% endblock %}
