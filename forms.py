@@ -8,6 +8,7 @@ db = 'SelfConsistentCFBRanker/ncaafb.p'
 d = pd.read_pickle(db)
 
 teams = d['data']['teams']
+teams.insert(0,'')
 
 class selectTeam(FlaskForm):
     team = SelectField('Team', choices = teams, validators = [DataRequired()])
