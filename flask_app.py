@@ -24,6 +24,7 @@ def formatDf(data):
 
 def teamLink(teamName):
     x = ''.join([i for i in teamName if not i.isdigit()]).strip()
+    x = ''.join([i if not i=='&' else '%26' for i in x])
     return f'<a href="/team_stats?team={x}">{teamName}</a>'
 
 @server_bp.route('/',methods=['GET', 'POST'])
@@ -78,6 +79,7 @@ def team_stats():
         if form.team.data == None:
             form.team.data = link_team
         team = form.team.data
+        team = ''.join([i if not i=='&' else '%26' for i in team])
         return redirect(f'/team_stats?team={team}')
 
 @server_bp.route('/explanation',methods=['GET', 'POST'])
